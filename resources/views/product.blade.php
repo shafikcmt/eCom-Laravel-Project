@@ -1,6 +1,6 @@
 @extends('master')
 @section('content')
-<div class=" product_custom">
+<div class="product_custom">
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -27,7 +27,24 @@
  
   
 </div>
-  
+</div> 
+<div class="container">
+    <div class="container-fluid">
+        <div class="row">
+        <h3 class="well">Trending product</h3>
+            @foreach($products as $item)
+            <div class="col-md-2">
+            <div class="">
+            <img class="img-responsive" style="height:150px" src="{{$item['gallery']}}" alt="...">
+            <p>{{$item['name']}}</p>
+           
+     
+            </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
 </div>
+
 
 @stop
