@@ -7,7 +7,16 @@
     <title>eCom Project</title>
    <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  crossorigin="anonymous">
-
+<style>
+    .slider-img{
+        height:450px !important;
+        
+    }
+    .product_custom{
+        height:600px !important;
+        background:pink;
+    }
+</style>
 
 
 <!-- Latest compiled and minified JavaScript -->
