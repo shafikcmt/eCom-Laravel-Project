@@ -15,10 +15,11 @@
   <div class="carousel-inner" role="listbox">
   @foreach($products as $item)
   <div class="item {{$item['id']==1?'active':''}}">
-      <img class="slider-img" src="{{$item['gallery']}}" alt="...">
+      <a href="detail/{{$item['id']}}">
+      <img class="slider-img" src="{{$item['gallery']}}">
       <h3>{{$item['name']}}</h3>
       <p>{{$item['discription']}}</p>
-     
+      </a>
     </div>
   @endforeach
   </div>
@@ -30,15 +31,15 @@
 </div> 
 <div class="container">
     <div class="container-fluid">
-        <div class="row">
+        
         <h3 class="well">Trending product</h3>
             @foreach($products as $item)
-            <div class="col-md-2">
-            <div class="">
+            <div class="row">
+            <div class="col-md-3">
+            <a href="detail/{{$item['id']}}">
             <img class="img-responsive" style="height:150px" src="{{$item['gallery']}}" alt="...">
             <p>{{$item['name']}}</p>
-           
-     
+            </a>
             </div>
             </div>
             @endforeach
