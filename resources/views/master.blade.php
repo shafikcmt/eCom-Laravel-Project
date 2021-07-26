@@ -22,7 +22,7 @@
         
     }
     .search-box{
-        width: 500px !important;
+        width: 450px !important;
     }
 </style>
 
