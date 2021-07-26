@@ -16,6 +16,14 @@
         height:600px !important;
         background:pink;
     }
+    .search-item{
+        width: 200px;
+        overflow:hidden;
+        
+    }
+    .search-box{
+        width: 500px !important;
+    }
 </style>
 
 
