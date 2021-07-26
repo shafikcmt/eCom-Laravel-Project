@@ -17,12 +17,16 @@
         background:pink;
     }
     .search-item{
-        width: 200px;
-        overflow:hidden;
+        
         
     }
     .search-box{
         width: 450px !important;
+    }
+    .divider{
+        border-bottom:1px solid #ccc;
+        margin-bottom:10px;
+        padding-bottom:20px;
     }
 </style>
 
