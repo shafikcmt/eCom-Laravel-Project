@@ -32,23 +32,24 @@
 </tr>
   </tbody>
 </table>
-<form action="/action_page.php">
+<form  action="orderplace" method="POST">
+  @csrf
   <div class="form-group">
   <label for="">Address</label>
-    <textarea class="form-control" name="address"></textarea>
+    <textarea placeholder="enter your address" class="form-control" name="address"></textarea>
   </div>
   <div class="form-group">
     <label for="">Payment Method</label>
     <p>
-    <input type="radio" name="payment" id="pwd"><span> Online Payment</span>
+    <input type="radio" value="cash" name="payment" id="pwd"><span> Online Payment</span>
 
     </p>
     <p>
-    <input type="radio" name="payment" id="pwd"><span> Bkash Payment</span>
+    <input type="radio" value="cash" name="payment" id="pwd"><span> Bkash Payment</span>
 
     </p>
     <p>
-    <input type="radio" name="payment" id="pwd"><span> Payment on Delevery</span>
+    <input type="radio" value="cash" name="payment" id="pwd"><span> Payment on Delevery</span>
 
     </p>
   </div>
