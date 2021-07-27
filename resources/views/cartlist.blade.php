@@ -1,7 +1,11 @@
 @extends('master')
 @section('content')
 <div class="product_search">
-<h3 class="well">CartList Item</h3>
+<h3 class="well">CartList Item
+
+<a class="btn btn-success pull-right" href="/ordernow">Order Now</a>
+</h3>
+
             @foreach($products as $item)
         <div class="row divider">
         
@@ -26,5 +30,11 @@
 </div>   
      
 @endforeach
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+    <a class="btn btn-success pull-right" href="/ordernow">Order Now</a><br><br>
+    </div>
+</div>
+
 </div> 
 @endsection
